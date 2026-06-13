@@ -1,112 +1,87 @@
-# 🌐 Configuración Básica de IP en Linux
+# 🌐 Configuración Básica de IP en Linux (Nivel 1)
 
-Este trabajo práctico demuestra cómo un operador de nivel 1 puede:
-- Ver la configuración actual de red.
+Este práctico demuestra cómo un operador de nivel 1 puede:
+- Ver la configuración de red.
 - Cambiar la IP manualmente.
-- Validar conectividad con herramientas básicas.
+- Validar conectividad con ping y nslookup.
 
+---
 
+## 📊 Paso 1 – Configuración inicial
+![IP Actual](assets/linux-ip/s1.jpeg)
 
-## 📊 Paso 1 – Ver configuración actual
-Comando:
+---
 
-    ip addr show 
+## 🛠️ Paso 2 – Intento de ifconfig
+![Ifconfig Error](assets/linux-ip/s2.jpeg)
 
-iMAGEN
-Primera captura → comando ip addr show mostrando la IP actual de tu interfaz (enp0s3).
+---
 
-    inet 192.168.50.100/24 brd 192.168.50.255 scope global eth0
+## 🛠️ Paso 3 – Edición de Netplan
+![Netplan Config](assets/linux-ip/s3.jpeg)
 
+---
 
-🛠️ Paso 2 – Configurar IP manualmente
+## 📌 Paso 4 – Aplicar cambios
+![Netplan Apply](assets/linux-ip/s4.jpeg)
 
-Segunda captura → intento de ifconfig (salió el aviso de que no está instalado, lo cual también sirve como evidencia).
+---
 
-Ahora seguimos con la parte de configuración manual de IP en Linux
-
-Instalar net-tools (si querés usar ifconfig):
-
-    sudo apt update
-    sudo apt install net-tools
-
-Confirmar IP actual  
-Ya lo hicimos con ip addr show → tenémos la IP 192.0.2.200/24 en la interfaz enp0s3.
-Configurar IP manualmente (Netplan)  
-Aunque no actualiza repositorios, podemos editar el archivo de configuración:
-
-    sudo nano /etc/netplan/01-netcfg.yaml
-
-Ejemplo de configuración ficticia:
-
-    network:
-    version: 2
-    renderer: networkd
-    ethernets:
-    eth0:
-      dhcp4: no
-      addresses: [192.168.60.100/24]
-      gateway4: 192.168.60.1
-      nameservers:
-        addresses: [8.8.8.8, 1.1.1.1]
-
-  Aplicar cambios:
-
-    sudo netplan apply
-
-##🔍 Paso 3 – Validar conectividad
-Ping al gateway:
-          
-    ping -c 4 192.168.60.1
-
-## Ping a un dominio externo:
-
-    ping -c 4 google.com
-
-Prueba DNS con nslookup:
-
-    nslookup google.com
-
-✅ Conclusión
-Este procedimiento permite:
-
-Confirmar la configuración de IP, máscara y gateway.
-
-Validar que la red funciona correctamente.
-
-Documentar con capturas de consola y panel de red.
-
-config-ip-linux/
-├── README.md
-├── capturas/
-│   ├── ipconfig.png
-│   ├── cambio_ip.png
-│   ├── ping.png
-│   └── nslookup.png
-
-
-### Validación de conectividad
-
+## 📊 Paso 5 – Validación
 **Ping al gateway**
-![Ping Gateway](assets/linux-ip/ping-gateway.png)
-> Resultado: Destination Host Unreachable → el gateway no responde.
+![Ping Gateway](assets/linux-ip/s5.jpeg)
 
 **Ping a Google**
-![Ping Google](assets/linux-ip/ping-google.png)
-> Resultado: Destination Host Unreachable → sin salida a Internet.
+![Ping Google](assets/linux-ip/s6.jpeg)
 
 **Prueba DNS**
-![NSLookup](assets/linux-ip/nslookup.png)
-> Resultado: Resolución correcta de google.com → DNS operativo.
+![NSLookup](assets/linux-ip/s7.jpeg)
 
-La IP fija quedó aplicada (192.0.2.2/24).
+**Ping repetido a Google**
+![Ping Google 2](assets/linux-ip/s8.jpeg)
 
-El ping al gateway (192.0.2.1) devuelve Destination Host Unreachable.
+---
 
-El ping a Google también falla.
+## ✅ Conclusión
+Este ejercicio muestra que:
+- La IP fija se configuró correctamente.  
+- El ping al gateway y a Google falló → sin salida a Internet.  
+- El DNS resolvió correctamente → servicio operativo.  
 
-Sin embargo, el nslookup a google.com sí resolvió la dirección IP → eso significa que DNS funciona, pero no hay conectividad de red hacia afuera.
+> 📌 Observación: El operador de nivel 1 documenta los resultados y escala la incidencia al área de redes para revisión.
 
-No siempre todas las pruebas van a salir bien, de todas formas vamos a encontrar el problema y resolverlo. 
 
+
+### Conceptos básicos
+
+- **[IP](ca://s?q=Que_es_una_IP_en_redes)**: número único que identifica un dispositivo en la red.  
+- **[Máscara de red](ca://s?q=Que_es_una_mascara_de_red)**: define el rango de hosts disponibles dentro de la red.  
+- **[Gateway](ca://s?q=Que_es_un_gateway_en_redes)**: dispositivo que conecta tu red local con otras redes (ej. Internet).  
+- **[DNS](ca://s?q=Que_es_el_DNS_y_como_funciona)**: traduce nombres de dominio (google.com) a direcciones IP.
+
+  📊 Estadísticas y contadores
+## 📈 Estadísticas de GitHub
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MarceloNH-IT&show_icons=true&theme=radical)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MarceloNH-IT&layout=compact&theme=radical)
+
+![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=MarceloNH-IT&theme=radical)
+
+![Profile Views](https://komarev.com/ghpvc/?username=MarceloNH-IT&color=blue&style=flat)
+
+### 🏁 Conclusión
+
+El ejercicio demuestra que un operador de nivel 1 puede:
+- Configurar IP, máscara y gateway en Linux.  
+- Ejecutar pruebas de conectividad con ping y nslookup.  
+- Interpretar resultados: IP correcta, DNS operativo, pero sin salida a Internet.  
+- Documentar con capturas y observaciones claras.  
+
+📌 Observación: Se recomienda escalar al área de redes para revisar la configuración de VirtualBox (NAT/Bridge) y asegurar conectividad externa.
+
+Voy a subir la prueba nivel 2 para resolver el problema. 
+
+Gracias por visitarme y les envio un saludo grande. 
 
 

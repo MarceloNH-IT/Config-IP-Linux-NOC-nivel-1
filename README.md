@@ -42,7 +42,7 @@ Este práctico demuestra cómo un operador de nivel 1 puede:
 
 ---
 
-## ✅ Conclusión
+## ✅ Observacion
 Este ejercicio muestra que:
 - La IP fija se configuró correctamente.  
 - El ping al gateway y a Google falló → sin salida a Internet.  

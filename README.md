@@ -17,6 +17,8 @@ Este práctico demuestra cómo un operador de nivel 1 puede:
 
 ---
 
+
+
 ## 🛠️ Paso 3 – Edición de Netplan
 ![Netplan Config](assets/linux-ip/s3.jpeg)
 
@@ -118,6 +120,10 @@ El ejercicio demuestra que un operador de nivel 1 puede:
 
 Voy a subir la prueba nivel 2 para resolver el problema. 
 
-Gracias por visitarme y les envio un saludo grande. 
+![Ifconfig Error](FotoNOC.jpg)
+
+Agradezco el tiempo de quienes visitan mi portafolio en GitHub. Cada laboratorio refleja mi compromiso con el aprendizaje continuo y la práctica aplicada en IT, redes y administración de sistemas. Mi objetivo es demostrar que puedo diagnosticar, resolver y documentar incidentes de manera profesional, utilizando máquinas virtuales y configuraciones de red.
+
+Invito a reclutadores y colegas a seguir mis repositorios, donde iré compartiendo nuevos proyectos, certificados y logros. Estoy abierto a colaborar y aportar mi experiencia en entornos que valoren la constancia y la capacidad de resolver problemas.
 
 

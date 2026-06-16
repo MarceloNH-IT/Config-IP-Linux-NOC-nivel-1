@@ -122,7 +122,7 @@ Voy a subir la prueba nivel 2 para resolver el problema.
 
 ![Ifconfig Error](FotoNOC.jpg)
 
-* **💼 LinkedIn**: [Horacio Marcelo Nuñez]   https://linkedin.com](https://www.linkedin.com/in/marcelo-nunez-it/?skipRedirect=true)
+* **💼 LinkedIn**: [Horacio Marcelo Nuñez](https://www.linkedin.com/in/marcelo-nunez-it/?skipRedirect=true)   
 * **📬 Correo Electrónico**: [marcelonh86@gmail.com](marcelonh86@gmail.com)
 * **🚀 GitHub**: [@MarceloNunez-NOC](https://github.com/MarceloNunez-NOC)
 

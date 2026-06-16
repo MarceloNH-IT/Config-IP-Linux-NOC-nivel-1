@@ -59,6 +59,42 @@ Este ejercicio muestra que:
 - **[Gateway](ca://s?q=Que_es_un_gateway_en_redes)**: dispositivo que conecta tu red local con otras redes (ej. Internet).  
 - **[DNS](ca://s?q=Que_es_el_DNS_y_como_funciona)**: traduce nombres de dominio (google.com) a direcciones IP.
 
+# 📂 Nombre del Proyecto Configuracion IP-Linux Noc Nivel 1
+
+## 📌 Descripción
+Breve explicación del laboratorio o práctica realizada.  
+Ejemplo: Configuración de IP estática en Linux para entorno NOC Nivel 1.
+
+## 🎯 Objetivos
+- [Configurar IP estática](ca://s?q=Configurar_IP_estatica_en_Linux)
+- [Validar conectividad con gateway](ca://s?q=Validar_conectividad_con_gateway_en_Linux)
+- [Probar resolución DNS](ca://s?q=Probar_resolucion_DNS_en_Linux)
+- [Documentar resultados](ca://s?q=Documentar_resultados_de_laboratorio_en_GitHub)
+
+## 🧩 Comandos utilizados
+- `ip addr show` → [Ver interfaces de red](ca://s?q=Comando_ip_addr_show_en_Linux)
+- `sudo nano /etc/netplan/01-netcfg.yaml` → [Editar configuración Netplan](ca://s?q=Editar_archivo_netplan_en_Linux)
+- `sudo netplan apply` → [Aplicar cambios de red](ca://s?q=Comando_netplan_apply_en_Linux)
+- `ping -c 4 192.168.60.1` → [Validar conectividad con gateway](ca://s?q=Comando_ping_en_Linux)
+- `ping -c 4 google.com` → [Probar conectividad externa](ca://s?q=Ping_a_google_en_Linux)
+- `nslookup google.com` → [Comprobar resolución DNS](ca://s?q=Comando_nslookup_en_Linux)
+
+## ✅ Validación
+- Ping exitoso al gateway (`192.168.60.1`)  
+- Ping exitoso a dominio externo (`google.com`)  
+- DNS responde correctamente con `nslookup`
+
+## 📷 Evidencias
+Incluye capturas de pantalla de:
+- Configuración aplicada en Netplan
+- Resultados de ping y nslookup
+- Estado de interfaces (`ip addr show`)
+
+## 📚 Notas
+Este laboratorio se ejecuta en máquina virtual Linux (Debian/Ubuntu).  
+Forma parte de la serie de prácticas NOC Nivel 1 documentadas en mi portafolio GitHub.
+
+
   📊 Estadísticas y contadores
 ## 📈 Estadísticas de GitHub
 

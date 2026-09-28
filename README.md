@@ -100,29 +100,15 @@ Forma parte de la serie de prácticas NOC Nivel 1 documentadas en mi portafolio 
   📊 Estadísticas y contadores
 ## 📈 Estadísticas de GitHub
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MarceloNH-IT&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.anuraghazra1.vercel.app/api?username=MarceloNH-IT&show_icons=true&theme=radical)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MarceloNH-IT&layout=compact&theme=radical)
+![Top Languages](https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=MarceloNH-IT&layout=compact&theme=radical)
 
 ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=MarceloNH-IT&theme=radical)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MarceloNH-IT&color=blue&style=flat)
 
-### 🏁 Conclusión
-
-El ejercicio demuestra que un operador de nivel 1 puede:
-- Configurar IP, máscara y gateway en Linux.  
-- Ejecutar pruebas de conectividad con ping y nslookup.  
-- Interpretar resultados: IP correcta, DNS operativo, pero sin salida a Internet.  
-- Documentar con capturas y observaciones claras.  
-
-📌 Observación: Se recomienda escalar al área de redes para revisar la configuración de VirtualBox (NAT/Bridge) y asegurar conectividad externa.
-
-Voy a subir la prueba nivel 2 para resolver el problema. 
-
-![Ifconfig Error](FotoNOC.jpg)
-
-* **💼 LinkedIn**: [Horacio Marcelo Nuñez](https://www.linkedin.com/in/marcelo-nunez-it/?skipRedirect=true)   
+* **💼 LinkedIn**: [Horacio Marcelo Nuñez](https://linkedin.com) 
 * **📬 Correo Electrónico**: [marcelonh86@gmail.com](marcelonh86@gmail.com)
 * **🚀 GitHub**: [@MarceloNunez-NOC](https://github.com/MarceloNunez-NOC)
 

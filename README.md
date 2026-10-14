@@ -1,5 +1,8 @@
 # 🌐 Configuración Básica de IP en Linux (Nivel 1)
 
+![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=MarceloNH-IT.MarceloNH-IT&style=flat&color=blue)
+
+
 Este práctico demuestra cómo un operador de nivel 1 puede:
 - Ver la configuración de red.
 - Cambiar la IP manualmente.
@@ -106,7 +109,7 @@ Forma parte de la serie de prácticas NOC Nivel 1 documentadas en mi portafolio 
 
 ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=MarceloNH-IT&theme=radical)
 
-![Profile Views](https://komarev.com/ghpvc/?username=MarceloNH-IT&color=blue&style=flat)
+![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=MarceloNH-IT.MarceloNH-IT&style=flat&color=blue)
 
 * **💼 LinkedIn**: [Horacio Marcelo Nuñez](https://linkedin.com) 
 * **📬 Correo Electrónico**: [marcelonh86@gmail.com](marcelonh86@gmail.com)
